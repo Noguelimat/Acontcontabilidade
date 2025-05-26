@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A-Cont Contabilidade | Especialistas em Micro e Pequenas Empresas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .hero-gradient {
+      background: linear-gradient(135deg, #002a4e 0%, #00a3ff 100%);
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    .btn-primary {
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background: #005fb3;
+      transform: translateY(-2px);
+    }
+
+    .highlight-text {
+      position: relative;
+      display: inline-block;
+      z-index: 1;
+    }
+
+    .highlight-text::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 30%;
+      background-color: rgba(253, 230, 138, 0.7);
+      z-index: -1;
+    }
+
+    .bg-micro-enterprise {
+      background: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center;
+      background-size: cover;
+      position: relative;
+    }
+
+    .bg-micro-enterprise::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(30, 58, 138, 0.8);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header/Navbar -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center">
+        <div class="bg-blue-700 text-white p-2 rounded-lg mr-3">
+          <i class="fas fa-calculator text-2xl"></i>
+        </div>
+        <h1 class="text-2xl font-bold text-blue-800">A-Cont <span class="text-blue-600">Contabilidade</span></h1>
+      </div>
+
+      <nav class="hidden md:block">
+        <ul class="flex space-x-8">
+          <li><a href="#home" class="text-blue-800 font-medium hover:text-blue-600 transition">Início</a></li>
+          <li><a href="#services" class="text-gray-600 hover:text-blue-600 transition">Serviços</a></li>
+          <li><a href="#about" class="text-gray-600 hover:text-blue-600 transition">Sobre Nós</a></li>
+          <li><a href="#blog" class="text-gray-600 hover:text-blue-600 transition">Blog</a></li>
+          <li><a href="#contact" class="text-gray-600 hover:text-blue-600 transition">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="hidden md:block">
+        <a href="#contact" class="btn-primary bg-blue-600 text-white px-6 py-2 rounded-full font-medium">Fale
+          Conosco</a>
+      </div>
+
+      <button class="md:hidden text-blue-800">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-gradient text-white py-20">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          <span class="highlight-text">Soluções contábeis</span> para<br>
+          <span class="highlight-text">Micro e Pequenas</span> Empresas
+        </h2>
+        <p class="text-lg mb-8 text-blue-100 max-w-lg">
+          Na A-Cont Contabilidade, entendemos os desafios específicos dos pequenos negócios. Oferecemos serviços
+          personalizados para ajudar sua empresa a crescer com segurança e conformidade.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#contact"
+            class="btn-primary bg-amber-400 text-blue-900 px-8 py-3 rounded-full font-bold text-center hover:bg-amber-300">
+            Solicite uma consulta
+          </a>
+          <a href="#services"
+            class="btn-primary bg-transparent border-2 border-white px-8 py-3 rounded-full font-bold text-center hover:bg-white hover:text-blue-800">
+            Nossos serviços
+          </a>
+        </div>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <div class="relative w-full max-w-md">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Equipe da A-Cont Contabilidade" class="rounded-2xl shadow-2xl">
+          <div class="absolute -bottom-5 -left-5 bg-white p-3 rounded-xl shadow-lg text-blue-800">
+            <div class="flex items-center">
+              <div class="bg-blue-100 p-2 rounded-lg mr-3">
+                <i class="fas fa-medal text-blue-600"></i>
+              </div>
+              <div>
+                <h4 class="font-bold">+15 anos</h4>
+                <p class="text-sm">de experiência</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Micro and Small Enterprise Focus -->
+  <section class="bg-micro-enterprise text-white py-16 relative">
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Especialistas em
+          <span class="text-amber-300">Micro e Pequenas Empresas</span></h2>
+        <p class="text-lg text-blue-100">Sabemos que cada Real conta quando você está começando. Nossos serviços são
+          projetados para oferecer o máximo de valor com o mínimo de custos para seu negócio.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-xl border border-white border-opacity-20">
+          <div class="text-amber-300 text-3xl mb-4">
+            <i class="fas fa-coins"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Custos Acessíveis</h3>
+          <p class="text-blue-100">Planos personalizados que cabem no seu orçamento, sem comprometer a qualidade do
+            serviço.</p>
+        </div>
+
+        <div class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-xl border border-white border-opacity-20">
+          <div class="text-amber-300 text-3xl mb-4">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Gestão Simplificada</h3>
+          <p class="text-blue-100">Focamos no essencial para seu negócio, eliminando burocracias e complexidades
+            desnecessárias.</p>
+        </div>
+
+        <div class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-xl border border-white border-opacity-20">
+          <div class="text-amber-300 text-3xl mb-4">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Parceiros de Negócios</h3>
+          <p class="text-blue-100">Não somos apenas contadores, somos parceiros no crescimento sustentável da sua
+            empresa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Nossos <span class="text-blue-600">Serviços</span>
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Soluções completas para todas as necessidades contábeis e
+          tributárias do seu negócio.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="benefit-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+          <div class="bg-blue-100 text-blue-700 w-14 h-14 rounded-xl flex items-center justify-center mb-4">
+            <i class="fas fa-file-invoice-dollar text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-blue-800 mb-3">Abertura de Empresa</h3>
+          <p class="text-gray-600 mb-4">Cuide de toda a burocracia para você começar seu negócio com o pé direito,
+            escolhendo o melhor regime tributário.</p>
+          <a href="#" class="text-blue-600 font-medium flex items-center">
+            Saiba mais <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+
+        <div class="benefit-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+          <div class="bg-blue-100 text-blue-700 w-14 h-14 rounded-xl flex items-center justify-center mb-4">
+            <i class="fas fa-calculator text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-blue-800 mb-3">Escrituração Contábil</h3>
+          <p class="text-gray-600 mb-4">Organização completa dos livros contábeis e fiscal, garantindo conformidade com
+            todas as obrigações legais.</p>
+          <a href="#" class="text-blue-600 font-medium flex items-center">
+            Saiba mais <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+
+        <div class="benefit-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+          <div class="bg-blue-100 text-blue-700 w-14 h-14 rounded-xl flex items-center justify-center mb-4">
+            <i class="fas fa-file-alt text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-blue-800 mb-3">Declarações e Obrigações</h3>
+          <p class="text-gray-600 mb-4">Preparamos e entregamos todas as obrigações acessórias como DAS, ECD, ECF, DCTF
+            e outras dentro dos prazos.</p>
+          <a href="#" class="text-blue-600 font-medium flex items-center">
+            Saiba mais <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+
+        <div class="benefit-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+          <div class="bg-blue-100 text-blue-700 w-14 h-14 rounded-xl flex items-center justify-center mb-4">
+            <i class="fas fa-search-dollar text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-blue-800 mb-3">Consultoria Tributária</h3>
+          <p class="text-gray-600 mb-4">Análise completa para redução legal da carga tributária, escolhendo o melhor
+            regime para seu negócio.</p>
+          <a href="#" class="text-blue-600 font-medium flex items-center">
+            Saiba mais <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+
+        <div class="benefit-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+          <div class="bg-blue-100 text-blue-700 w-14 h-14 rounded-xl flex items-center justify-center mb-4">
+            <i class="fas fa-money-bill-wave text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-blue-800 mb-3">Folha de Pagamento</h3>
+          <p class="text-gray-600 mb-4">Cálculo de pró-labore, férias, 13º, rescisões e todos os encargos trabalhistas
+            de forma precisa e eficiente.</p>
+          <a href="#" class="text-blue-600 font-medium flex items-center">
+            Saiba mais <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+
+        <div class="benefit-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+          <div class="bg-blue-100 text-blue-700 w-14 h-14 rounded-xl flex items-center justify-center mb-4">
+            <i class="fas fa-chart-pie text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-blue-800 mb-3">Relatórios Gerenciais</h3>
+          <p class="text-gray-600 mb-4">Dados claros e análises financeiras para ajudá-lo a tomar decisões estratégicas
+            para o crescimento do negócio.</p>
+          <a href="#" class="text-blue-600 font-medium flex items-center">
+            Saiba mais <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-6">Sobre a
+            <span class="text-blue-600">A-Cont Contabilidade</span></h2>
+          <p class="text-gray-600 mb-6">Fundada por contadores apaixonados pelo que fazem, a A-Cont nasceu com o propósito de oferecer serviços contábeis
+            diferenciados para micro e pequenas empresas, setor muitas vezes negligenciado pelas grandes empresas de
+            contabilidade.</p>
+          <p class="text-gray-600 mb-8">Nosso diferencial está na abordagem personalizada, no atendimento próximo e no
+            entendimento de que cada cliente tem necessidades específicas. Não somos apenas prestadores de serviços,
+            somos parceiros no seu negócio.</p>
+
+          <div class="grid grid-cols-2 gap-6 mb-8">
+            <div class="flex items-start">
+              <div class="bg-blue-100 text-blue-700 p-2 rounded-lg mr-3">
+                <i class="fas fa-check"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-blue-800">Missão</h4>
+                <p class="text-sm text-gray-600">Simplificar a contabilidade para pequenos negócios.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-blue-100 text-blue-700 p-2 rounded-lg mr-3">
+                <i class="fas fa-eye"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-blue-800">Visão</h4>
+                <p class="text-sm text-gray-600">Ser referência em contabilidade para MEIs e pequenas empresas.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-blue-100 text-blue-700 p-2 rounded-lg mr-3">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-blue-800">Valores</h4>
+                <p class="text-sm text-gray-600">Transparência, ética e compromisso com resultados.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-blue-100 text-blue-700 p-2 rounded-lg mr-3">
+                <i class="fas fa-users"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-blue-800">Equipe</h4>
+                <p class="text-sm text-gray-600">Profissionais especializados em pequenos negócios.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact"
+            class="btn-primary bg-blue-600 text-white px-8 py-3 rounded-full font-bold inline-flex items-center">
+            Fale com nossos especialistas <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+
+        <div class="lg:w-1/2">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Equipe A-Cont" class="rounded-2xl shadow-xl w-full">
+
+            <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg max-w-xs">
+              <div class="flex items-start">
+                <div class="bg-blue-600 text-white p-3 rounded-xl mr-4">
+                  <i class="fas fa-award text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-blue-800 mb-1">Reconhecimento</h4>
+                  <p class="text-sm text-gray-600">Premiada três vezes como melhor escritório para pequenos negócios na
+                    região.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 bg-blue-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">O que dizem nossos clientes</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Empresários que confiaram na A-Cont para cuidar da contabilidade de
+          seus negócios.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <div class="flex mb-4">
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+          </div>
+          <p class="text-gray-600 italic mb-6">"Depois de ter problemas com minha contabilidade anterior, encontrar a
+            A-Cont foi um alívio. Eles explicam tudo de forma clara e realmente entendem as necessidades de um pequeno
+            negócio como o meu."</p>
+          <div class="flex items-center">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Marcela Silva" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-bold">Marcela Silva</h4>
+              <p class="text-sm text-gray-500">Marcenaria Artesanal</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <div class="flex mb-4">
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+          </div>
+          <p class="text-gray-600 italic mb-6">"Como MEI, precisava de um serviço acessível e eficiente. A A-Cont não só
+            me ajudou a regularizar minha situação, como reduziu meus impostos com uma consultoria tributária
+            excelente."</p>
+          <div class="flex items-center">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Oliveira" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-bold">Carlos Oliveira</h4>
+              <p class="text-sm text-gray-500">Consultor de TI</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <div class="flex mb-4">
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+          </div>
+          <p class="text-gray-600 italic mb-6">"A equipe da A-Cont foi fundamental quando abri minha lojinha. Eles
+            cuidaram de toda burocracia e ainda me avisam de todas as obrigações que preciso cumprir. Recomendo para
+            qualquer pequeno empresário!"</p>
+          <div class="flex items-center">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ana Costa" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-bold">Ana Costa</h4>
+              <p class="text-sm text-gray-500">Loja de Cosméticos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Conteúdo para
+          <span class="text-blue-600">seu negócio</span></h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Artigos e dicas para ajudar micro e pequenos empresários a
+          navegar no mundo da contabilidade e gestão.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <article class="rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1511&q=80" alt="Tributação para MEI" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="text-blue-600 text-sm font-medium">Tributação</span>
+            <h3 class="text-xl font-bold text-gray-800 my-2">Guia completo de impostos para MEI em 2023</h3>
+            <p class="text-gray-600 mb-4">Tudo o que você precisa saber sobre as obrigações tributárias do
+              Microempreendedor Individual neste ano.</p>
+            <div class="flex items-center text-sm text-gray-500">
+              <i class="far fa-calendar mr-2"></i> 15 de Junho, 2023
+            </div>
+          </div>
+        </article>
+
+        <article class="rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Plano de negócios" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="text-blue-600 text-sm font-medium">Gestão</span>
+            <h3 class="text-xl font-bold text-gray-800 my-2">Como organizar as finanças da sua pequena empresa</h3>
+            <p class="text-gray-600 mb-4">Passos práticos para controlar melhor o fluxo de caixa e tomar decisões mais
+              acertadas no seu negócio.</p>
+            <div class="flex items-center text-sm text-gray-500">
+              <i class="far fa-calendar mr-2"></i> 5 de Maio, 2023
+            </div>
+          </div>
+        </article>
+
+        <article class="rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+          <img src="https://images.unsplash.com/photo-1521791136063-7980c9af06b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Simples Nacional" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="text-blue-600 text-sm font-medium">Legislação</span>
+            <h3 class="text-xl font-bold text-gray-800 my-2">Mudanças no Simples Nacional: o que você precisa saber</h3>
+            <p class="text-gray-600 mb-4">As principais alterações na legislação do Simples Nacional e como elas afetam
+              seu pequeno negócio.</p>
+            <div class="flex items-center text-sm text-gray-500">
+              <i class="far fa-calendar mr-2"></i> 22 de Abril, 2023
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="#" class="inline-flex items-center text-blue-600 font-medium">
+          Ver todos os artigos <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-blue-600 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Pronto para simplificar sua contabilidade?</h2>
+      <p class="text-lg text-blue-100 max-w-2xl mx-auto mb-8">Deixe a burocracia conosco para que você possa focar no
+        que realmente importa: fazer seu negócio crescer.</p>
+      <a href="#contact"
+        class="btn-primary bg-white text-blue-800 px-8 py-3 rounded-full font-bold inline-flex items-center">
+        Falar com um especialista <i class="fas fa-arrow-right ml-2"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row">
+        <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-6">Entre em
+            <span class="text-blue-600">contato</span></h2>
+          <p class="text-gray-600 mb-8">Tem dúvidas sobre nossos serviços ou quer saber como podemos ajudar sua empresa?
+            Preencha o formulário ou fale conosco pelos canais abaixo.</p>
+
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="bg-blue-100 text-blue-700 p-3 rounded-lg mr-4">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-blue-800 mb-1">Endereço</h4>
+                <p class="text-gray-600">Rua Padre Américo Ceppi, 1532<br>Bairro Brasil, Uberlândia/MG</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="bg-blue-100 text-blue-700 p-3 rounded-lg mr-4">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-blue-800 mb-1">Telefone</h4>                
+                <p class="text-gray-600">WhatsApp: (34) 99684-3320</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="bg-blue-100 text-blue-700 p-3 rounded-lg mr-4">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-blue-800 mb-1">Email</h4>
+                <p class="text-gray-600">acont.contabilidade@outlook.com</p>                
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="bg-blue-100 text-blue-700 p-3 rounded-lg mr-4">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-blue-800 mb-1">Horário de atendimento</h4>
+                <p class="text-gray-600">Segunda a Sexta: 8h às 18h<br>Sábado: 9h às 13h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:w-1/2 bg-white p-8 rounded-xl shadow-md">
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="block text-gray-700 font-medium mb-2">Seu nome</label>
+              <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Digite seu nome">
+            </div>
+
+            <div>
+              <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+              <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Digite seu email">
+            </div>
+
+            <div>
+              <label for="phone" class="block text-gray-700 font-medium mb-2">Telefone</label>
+              <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="(XX) XXXXX-XXXX">
+            </div>
+
+            <div>
+              <label for="empresa" class="block text-gray-700 font-medium mb-2">Tipo de empresa</label>
+              <select id="empresa" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="">Selecione...</option>
+                                <option value="mei">MEI</option>
+                                <option value="me">Microempresa</option>
+                                <option value="epp">EPP</option>
+                                <option value="outros">Outros</option>
+                            </select>
+            </div>
+
+            <div>
+              <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+              <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Descreva como podemos ajudar..."></textarea>
+            </div>
+
+            <button type="submit" class="w-full btn-primary bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                            Enviar mensagem
+                        </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Floating Button -->
+  <div class="fixed bottom-6 right-6 z-50">
+    <a href="https://wa.me/5511987654321" target="_blank"
+      class="bg-green-500 text-white p-4 rounded-full shadow-xl flex items-center justify-center hover:bg-green-600 transition">
+      <i class="fab fa-whatsapp text-2xl"></i>
+      <span class="ml-2 text-sm font-semibold hidden sm:inline">Fale conosco</span>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <div class="flex items-center mb-6">
+            <div class="bg-white text-blue-700 p-2 rounded-lg mr-3">
+              <i class="fas fa-calculator text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold">A-Cont</h3>
+          </div>
+          <p class="text-blue-200 mb-4">Especialistas em contabilidade para micro e pequenas empresas, oferecendo
+            soluções personalizadas para o sucesso do seu negócio.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-blue-200 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-blue-200 hover:text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-blue-200 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-bold mb-6">Serviços</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-blue-200 hover:text-white">Abertura de Empresa</a></li>
+            <li><a href="#" class="text-blue-200 hover:text-white">Escrituração Contábil</a></li>
+            <li><a href="#" class="text-blue-200 hover:text-white">Declarações Fiscais</a></li>
+            <li><a href="#" class="text-blue-200 hover:text-white">Consultoria Tributária</a></li>
+            <li><a href="#" class="text-blue-200 hover:text-white">Folha de Pagamento</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-bold mb-6">Links Úteis</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-blue-200 hover:text-white">Portal do Empreendedor</a></li>
+            <li><a href="#" class="text-blue-200 hover:text-white">Receita Federal</a></li>
+            <li><a href="#" class="text-blue-200 hover:text-white">Simples Nacional</a></li>
+            <li><a href="#" class="text-blue-200 hover:text-white">Calculadora MEI</a></li>
+            <li><a href="#" class="text-blue-200 hover:text-white">Dúvidas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-bold mb-6">Newsletter</h4>
+          <p class="text-blue-200 mb-4">Assine nossa newsletter e receba dicas e atualizações para o seu negócio.</p>
+          <form class="flex">
+            <input type="email" placeholder="Seu email" class="px-4 py-2 w-full text-gray-800 rounded-l-lg focus:outline-none">
+            <button type="submit" class="bg-amber-400 text-blue-900 px-4 rounded-r-lg font-medium">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-blue-800 text-center text-blue-300 text-sm">
+        <p>&copy; 2023 A-Cont Contabilidade. Todos os direitos reservados.</p>
+        <p class="mt-2">Desenvolvido com <i class="fas fa-heart text-red-400"></i> para pequenos negócios</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple JavaScript for mobile menu toggle (could be expanded)
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header button');
+            const mobileMenu = document.createElement('div');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.innerHTML = `
+                    <div class="fixed inset-0 bg-white z-50 p-4">
+                        <div class="flex justify-end mb-8">
+                            <button class="text-blue-800 text-2xl">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <ul class="space-y-6 text-center">
+                            <li><a href="#home" class="text-2xl font-medium text-blue-800">Início</a></li>
+                            <li><a href="#services" class="text-2xl font-medium text-gray-600">Serviços</a></li>
+                            <li><a href="#about" class="text-2xl font-medium text-gray-600">Sobre Nós</a></li>
+                            <li><a href="#blog" class="text-2xl font-medium text-gray-600">Blog</a></li>
+                            <li><a href="#contact" class="text-2xl font-medium text-gray-600">Contato</a></li>
+                        </ul>
+                        <div class="mt-10 text-center">
+                            <a href="#contact" class="btn-primary bg-blue-600 text-white px-8 py-3 rounded-full font-bold inline-block">Fale Conosco</a>
+                        </div>
+                    </div>
+                `;
+                
+                const closeButton = mobileMenu.querySelector('button');
+                closeButton.addEventListener('click', function() {
+                    document.body.removeChild(mobileMenu);
+                });
+                
+                document.body.appendChild(mobileMenu);
+            });
+        });
+  </script>
+</body>
+
+</html>
